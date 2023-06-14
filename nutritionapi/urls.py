@@ -20,5 +20,7 @@ from nutritionapi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list', views.index, name='index')
+    path('list', views.index, name='index'),
+    path('newlist', views.list, name='newlist'),
+    path('categories', views.categories, name='categories')
 ]
